@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FREE GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<nav>
+
+  <ul class="topnav">
+    <li><a href="about.html">About Me</a></li>
+
+    <li class="dropdown">
+
+        <button onclick="myFunction()" class="dropDownBtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-projects">
+          <a href="DataCenterRFP-Response.html">ORNL Data-Center Design Proposal</a>
+          <a href="FIFO-project.html">FPGA FIFO w/VHDL</a>
+          <a href="ML-BreastCancerDiagnosis.html">Machine Learning: Breast Cancer Diagnosis</a>
+          <a href="ML-Reduction&KmeansClustering.html">Machine Learning: Reduction & K-Means Clustering</a>
+        </div>
+
+    </li>
+
+
+
+    <li><a class="active" href="home.html">Home</a></li>
+    <li class="left"><a href="home.html">Ryan Pauly</a></li>
+  </ul>
+
+</nav>
+
+</br></br></br></br>
+
+<body>
+
+  <div class="home-container">
+    </br>
+    <h1>Thank you for visiting my website!</h1>
+    <p>I created this to showcase some of my past projects and experiences.</p>
+    </br>
+    <p>The projects vary from Machine Learning projects to Data Center design proposals.</p>
+    </br>
+  </div>
+</body>
+
+
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropDownBtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-projects");
+      var i;
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+</html>

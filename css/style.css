@@ -1,0 +1,345 @@
+/*****************************
+  GLOBAL SETTINGS
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: #fff;
+    color: #2e2e2e;
+}
+
+
+hr{
+  border-top: 1px solid #2e2e2e;
+  width: 90%;
+}
+
+p{
+  font-size: 16pt;
+}
+
+/*******************
+
+  NAVBAR
+
+*******************/
+ul.topnav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: #eee;
+
+
+  border: 0px solid red;
+}
+
+ul.topnav li.left{float: left;}
+ul.topnav li{
+  float: right;
+  z-index: 100;
+}
+
+ul.topnav li a{
+  color: #2e2e2e;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20pt;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav a.active{text-decoration: underline;}
+
+/*
+ul.topnav li:hover{
+  text-decoration: underline;
+}
+*/
+
+@media screen and (max-width: 600px){
+  ul.topnav li.left,
+  ul.topnav li{float: none;}
+
+  ul.topnav li.dropdown .dropDownBtn{
+    width: 100%;
+  }
+
+  ul.topnav li.dropdown .dropdown-projects{
+    position: relative;
+  }
+
+
+}
+/******************************
+
+  HOME PAGE
+
+*/
+
+.home-container{
+  padding: 1em;
+}
+
+
+/********************************
+
+  DROP DOWN BUTTON
+
+*/
+li.dropdown{
+
+}
+
+li.dropdown .dropDownBtn{
+  background-color: inherit;
+  padding: 14px 16px;
+  font-size: 20pt;
+  color: #2e2e2e;
+  font-family: inherit;
+  text-align: center;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  width: 160px;
+  z-index: 1;
+}
+
+ul.topnav li.dropdown a{
+  font-size: 12pt;
+}
+
+.dropdown-projects{
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 100;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+
+.dropdown-projects a{
+  color: #2e2e2e;
+  font-size: 14pt;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #fff;
+
+}
+
+.dropdown-projects:hover{
+  text-decoration: none;
+}
+
+
+li.dropdown a:hover {
+  background-color: #505050;
+  color: #FAEBD7;
+}
+.show{
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+/********************************
+  ABOUT ME SECTION
+*/
+
+/** GRID SECTION **/
+
+.grid-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  border: 0px dashed blue;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+img {
+  /*
+	max-width: 80%;
+  height: auto;
+	object-fit: cover;
+  */
+  transform: scale(0.99);
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover{
+  transform: scale(1);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    transform: none;
+  }
+}
+
+#profile{
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+}
+
+
+/* One: Profile Image? */
+.one{
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+}
+
+/* Table text? */
+.two{
+  text-align: left;
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+h2.two{
+  text-align: center;
+}
+
+/* GALLERY START: with hr tag and then GALLERY HEADER */
+.three{
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+
+/* FIRST GALLERY PICTURE: CABIN */
+.four{
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
+
+/* 2nd GALLERY PICTURE: Desktop */
+.five{
+  grid-column: 1 / 2;
+  grid-row: 5 / 7;
+}
+
+/* 3rd GALLERY PICTURE: Twin Arches */
+.six{
+  grid-column: 2 / 4;
+  grid-row: 5 / 7;
+}
+
+
+/* 4th GALLERY PICTURE: */
+.seven{
+  grid-column: 1 / 3;
+  grid-row: 7 / 9;
+}
+
+/* 5th GALLERY PICTURE: */
+.eight{
+  grid-column: 3 / 4;
+  grid-row: 7 / 9;
+}
+
+.nine{
+
+}
+
+/* FOOTER */
+.ten{
+  grid-column: 1 / 4;
+  grid-row: 9 / 10;
+}
+
+
+
+
+/**********************************
+  CONTACT Information
+*/
+.ContactInformation{
+  display: block;
+    font-size: 20pt;
+    text-align: center;
+    z-index: -1;
+}
+
+
+
+/******************************
+
+  PROJECT PAGE STUFF
+
+*/
+
+.embedded-project{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+
+.RFP-Text{
+  justify-content: center;
+  text-align: left;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/**************************
+
+  NEW STUFF
+
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+*::before *::after{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #787878;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  height: 90%;
+
+  text-align: center;
+}
+
+
+
+
+/*
+
+
+  END OF NEW STUFF
+
+
+**************/
