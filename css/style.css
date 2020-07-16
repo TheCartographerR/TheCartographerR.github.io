@@ -80,7 +80,7 @@ ul.topnav a.active{text-decoration: underline;}
 */
 
 .background_image{
-  background: url('../jpgdir/flock.jpg') no-repeat center center fixed;
+  background: url('jpgdir/flock.jpg') no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
