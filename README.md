@@ -1,2 +1,5 @@
+Creator: Ryan Pauly
 # TheCartographerR.github.io
-My personal website to showcase past projects and experience.
+
+Description: My personal website to showcase past projects and experience.
+

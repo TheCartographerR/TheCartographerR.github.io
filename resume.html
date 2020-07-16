@@ -19,75 +19,35 @@
     <!-- FREE GOOGLE ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<nav>
-
+<body>
   <ul class="topnav">
     <li><a href="about.html">About Me</a></li>
-    <li><a href="resume.html">Resume</a></li>
+    <li><a class="active" href="resume.html">Resume</a></li>
     <li class="dropdown">
-
         <button onclick="myFunction()" class="dropDownBtn">Projects
           <i class="fa fa-caret-down"></i>
         </button>
         <div id="myDropdown" class="dropdown-projects">
           <a href="DataCenterRFP-Response.html">ORNL Data-Center Design Proposal</a>
-          <a href="FIFO-project.html">FPGA FIFO w/VHDL</a>
+          <a href="FIFO-project.html">FPGA FIFO with VHDL</a>
           <a href="ML-BreastCancerDiagnosis.html">Machine Learning: Breast Cancer Diagnosis</a>
           <a href="ML-Reduction&KmeansClustering.html">Machine Learning: Reduction & K-Means Clustering</a>
         </div>
-
     </li>
-
-
-
-    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li class="left"><a href="index.html">Ryan Pauly</a></li>
   </ul>
 
-</nav>
 
-
-
-<body>
-  <!--
-  <div class="home-container">
-
-    </br>
-    <h1>Thank you for visiting my website!</h1>
-    <p>I created this to showcase some of my past projects and experiences.</p>
-    </br>
-    <p>The projects vary from Machine Learning projects to Data Center design proposals.</p>
-    </br>
-
+  <div class="embedded-project">
+    <iframe src="pdfdir/Ryan-Pauly-Resume-2020_temp_NEW.pdf" width="100%" height="1000px"></iframe>
   </div>
-  -->
-
-  <!-- BACKGROUND IMAGE -->
-  <div class="background_image"></div>
-
-  <!-- PAGE CONTENT -->
-  <table id="header" border="0">
-    <tr>
-      <th><h1 id="Welcome">Welcome</h1><th>
-    </tr>
-    <tr>
-      <td>
-        <!-- SEE MORE BUTTON -->
-        <input id="learnMoreBtn" type="button" value="About Me" onclick="location.href='about.html'">
-      </td>
-    </tr>
-  </table>
-
-
 
 </body>
 
-<footer>
-
-</footer>
-
 
 <script>
+
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
@@ -99,7 +59,7 @@
     if (!event.target.matches('.dropDownBtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-projects");
       var i;
-      for (var i = 0; i < dropdowns.length; i++) {
+      for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
@@ -107,6 +67,8 @@
       }
     }
   }
+
+
 </script>
 
 
