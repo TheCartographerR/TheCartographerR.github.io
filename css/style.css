@@ -57,7 +57,7 @@ ul.topnav li a{
   text-decoration: none;
 }
 
-ul.topnav a.active{text-decoration: underline;}
+ul.topnav a.active{font-weight: bold;}
 
 @media screen and (max-width: 600px){
   ul.topnav li.left,
@@ -97,6 +97,7 @@ ul.topnav a.active{text-decoration: underline;}
   font-family: sans-serif;
   font-size: 64pt;
   background-color: rgb(255,255,255,0.05);
+  text-shadow: 3px 1px #fff;
 }
 
 /* LEARN MORE BUTTON */
@@ -105,8 +106,8 @@ input[id="learnMoreBtn"]{
   margin-left: auto;
   margin-right: auto;
 
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
 
   background-color: rgb(255,255,255,0.3);
   border: 1px solid #191919;
