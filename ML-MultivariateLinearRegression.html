@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FREE GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <ul class="topnav">
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li class="dropdown">
+        <button onclick="myFunction()" class="dropDownBtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-projects">
+          <a href="DataCenterRFP-Response.html">ORNL Data-Center Design Proposal</a>
+          <a href="FIFO-project.html">FPGA FIFO w/VHDL</a>
+		  <a href="ML-MultivariateLinearRegression.html">ML: Multivate Linear Regression</a>
+          <a href="ML-BreastCancerDiagnosis.html">ML: Breast Cancer Diagnosis</a>
+          <a href="ML-Reduction&KmeansClustering.html">ML: Reduction & K-Means Clustering</a>
+        </div>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li class="left"><a href="index.html">Ryan Pauly</a></li>
+  </ul>
+
+</br></br></br>
+
+  <h1>Machine Learning:</h1>
+  <h2>Multivariate Linear Regression with car data</h2>
+  
+  <p>The goal of this project was to find relationships between different attributes of car information to find which independent variable
+  had the most significant impact on the dependent variable which in this case is miles per gallon. Additionally this project predicts gas milage off the 
+  calculated coefficient values discovered through multivariate linear regression training.</p>
+  
+  </br>
+  <div class="embedded-project">
+    <iframe src="pdfdir/Project1_Report.pdf" width="100%" height="1000px"></iframe>
+  </div>
+
+</body>
+
+
+<script>
+
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropDownBtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-projects");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+</script>
+
+
+</html>
