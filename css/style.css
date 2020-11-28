@@ -207,142 +207,6 @@ li.dropdown a:hover {
   z-index: 1;
 }
 
-/********************************
-  ABOUT ME SECTION
-*/
-
-/** GRID SECTION **/
-
-.grid-container{
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  border: 0px dashed blue;
-  padding: 2rem;
-  text-align: center;
-  align-items: center;
-}
-
-.gallery_img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
-img {
-  /*
-	max-width: 80%;
-  height: auto;
-	object-fit: cover;
-  */
-  transform: scale(0.99);
-  transition: all 0.3s ease-in-out;
-}
-
-img:hover{
-  transform: scale(1);
-  cursor: pointer;
-}
-
-
-@media screen and (max-width: 1024px) {
-  img:hover {
-    transform: none;
-  }
-
-  table{
-    display: none;
-  }
-}
-
-#profile{
-  border-radius: 50%;
-  width: 70%;
-  height: auto;
-}
-
-
-/* One: Profile Image? */
-.one{
-  grid-column: 1 / 1;
-  grid-row: 1 / 3;
-}
-
-/* Table text? */
-.two{
-  text-align: left;
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-}
-
-h2.two{
-  text-align: center;
-}
-
-/* GALLERY START: with hr tag and then GALLERY HEADER */
-.three{
-  grid-column: 1 / 4;
-  grid-row: 3 / 4;
-}
-
-/* FIRST GALLERY PICTURE: CABIN */
-.four{
-  grid-column: 1 / 4;
-  grid-row: 4 / 5;
-}
-
-/* 2nd GALLERY PICTURE: Desktop */
-.five{
-  grid-column: 1 / 2;
-  grid-row: 5 / 7;
-}
-
-/* 3rd GALLERY PICTURE: Twin Arches */
-.six{
-  grid-column: 2 / 4;
-  grid-row: 5 / 7;
-}
-
-
-/* 4th GALLERY PICTURE: */
-.seven{
-  grid-column: 1 / 3;
-  grid-row: 7 / 9;
-}
-
-/* 5th GALLERY PICTURE: */
-.eight{
-  grid-column: 3 / 4;
-  grid-row: 7 / 9;
-}
-
-.nine{
-
-}
-
-/* FOOTER */
-.ten{
-  grid-column: 1 / 4;
-  grid-row: 9 / 10;
-}
-
-
-
-
-/**********************************
-  CONTACT Information
-*/
-.ContactInformation{
-  display: block;
-    font-size: 20pt;
-    text-align: center;
-    z-index: -1;
-}
-
-
 
 /******************************
 
@@ -371,38 +235,172 @@ h2.two{
   padding-right: 10%;
 }
 
-/**************************
+/************************
 
-  NEW STUFF
+    Aboutv2.html CSS stuff
 
-*/
+***************************/
 
-
-* {
-  box-sizing: border-box;
-}
-
-*::before *::after{
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #787878;
-
-  text-rendering: optimizeLegibility;
+.AboutSECTION{
+  width: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(14, 5vw);
+  grid-gap: 1.5rem;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media only screen and (min-width: 3000px) {
+  .gallery{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vw;
+    padding-left: 5em;
+    padding-right: 5em;
+    grid-row-gap: 100px;
+    border: 2px dashed red;
+    text-align: center;
+    width: 50%;
+  }
+
+  .gallery__img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    display: block;
+    border: 2px dashed purple;
+
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vw;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+}
+
+.gallery__item--1 {
+  border: 0px solid blue;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--2 {
+  border: 0px solid red;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.gallery__item--4 {
+  border: 0px solid green;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.gallery__item--5 {
+  border: 0px solid red;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.gallery__item--7 {
+  border: 0px solid purple;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.gallery__item--8 {
+  border: 0px solid green;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.gallery__item--9 {
+  border: 0px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.gallery__item--10 {
+  border: 1px solid white;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
 }
 
 
+.footer{
+  background-color: #2e2e2e;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer p{
+  color: #F5F5F5;
+  font-size: 2em;
+}
+
+.footer_table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  border: 0px solid white;
+}
+
+.footer_table td{
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_table{
+    width: 40%;
+  }
+}
 
 
-/*
+.icon_btn{
+  background-color: #2e2e2e;
+  color: #F5F5F5;
+  font-size: 2em;
+  outline: none;
+  border: none;
+}
 
-
-  END OF NEW STUFF
-
-
-**************/
+.icon_btn:hover{
+  cursor: pointer;
+}

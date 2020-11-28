@@ -18,16 +18,12 @@
 
     <!-- FREE GOOGLE ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 <body>
-
   <ul class="topnav">
     <li><a class="active" href="about.html">About Me</a></li>
     <li><a href="resume.html">Resume</a></li>
-
     <li class="dropdown">
-
         <button onclick="myFunction()" class="dropDownBtn">Projects
           <i class="fa fa-caret-down"></i>
         </button>
@@ -39,100 +35,123 @@
           <a href="ML-Reduction&KmeansClustering.html">ML: Reduction & K-Means Clustering</a>
         </div>
     </li>
-    <li><a  href="index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li class="left"><a href="index.html">Ryan Pauly</a></li>
   </ul>
 
-  </br></br></br></br></br>
+  </br></br></br></br>
 
-  <div class="grid-container">
+  <div class="AboutSECTION">
 
-    <!-- Profile Icon -->
-    <div class="one">
-      <img src="imgdir/Mee.jpg" id="profile" alt="Image 1"/>
-    </div>
+    <h1>About Me</h1>
+    </br>
 
-    <!-- ABOUT SECTION TEXT -->
-    <div class="two">
-      <h1>About Me</h1>
-      </br>
-      <p>I graduated May 2020 with a Bachelor of Science degree in Computer Engineering from the University of Tennessee, Knoxville.</p>
-      </br>
-      </br>
+    <p>I graduated May 2020 with a Bachelor of Science degree in Computer Engineering from the University of Tennessee, Knoxville.</p>
 
-      <h2>Hobbies</h2>
+    <p>Desktop Computers are a big hobby of mine. I love to keep up with all the new hardware that is coming out from Intel, Nvidia, and AMD.</p>
 
-      <p>Desktop Computers are a big hobby of mine. I love to keep up with all the new hardware that is coming out from Intel, Nvidia, and AMD.</p>
+    <p>Backpacking and camping are another fun hobby of mine.</p>
 
-      <p>Backpacking and camping are another fun hobby of mine.</p>
-
-    </div>
-
-
-    <!-- GALLERY START -->
-    <div class="three">
-      <hr>
-      <div class="ContactInformation">
-        <p>GALLERY</P>
-      </div>
-    </div>
-
-    <!-- LOG CABIN IMAGE -->
-    <div class="four">
-      <img src="imgdir/LogCabin.jpg" class="gallery_img" alt="log cabin">
-    </div>
-
-    <!-- DESKTOP -->
-    <div class="five">
-      <img src="imgdir/MyDesktopComputer2.jpg" class="gallery_img" alt="My Desktop">
-    </div>
-
-    <!-- TWIN ARCHES -->
-    <div class="six">
-      <img src="imgdir/twin_arches.jpg" class="gallery_img" alt="Twin Arches Loop Trail">
-    </div>
-
-    <div class="seven">
-      <img src="imgdir/HikingTrip.png" class="gallery_img" alt="Hiking Trip">
-    </div>
-
-    <div class="eight">
-      <img src="imgdir/FixingUpAnOldDesktop.jpg" class="gallery_img" alt="Fixing an old desktop!">
-    </div>
-
-
-    <!-- FOOTER -->
-    <div class="ten">
-      <hr>
-      <div class="ContactInformation">
-        <p>CONTACT ME</P>
-
-        <p>Contact Information is available on my resume.</p>
-      </div>
-    </div>
-    <!--
-    <div class="elven">Eleven</div>
-    <div class="twelve">Twelve</div>
-    -->
+    </br></br>
+    <hr></hr>
+    <h1>Photo Gallery</h1>
+    <br>
   </div>
 
 
 
 
-<!-- CONTACT INFO -->
-<!--
-  <hr>
-  <div class="ContactInformation">
-    <p>CONTACT ME</P>
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+      <img src="imgdir/LogCabin.jpg" class="gallery__img" alt="Image 1">
+    </figure>
 
-    <p>Contact Information is available on my resume.</p>
+    <figure class="gallery__item gallery__item--2">
+      <img src="imgdir/FancyNo.jpg" class="gallery__img" alt="Image 2">
+    </figure>
+
+    <figure class="gallery__item gallery__item--3">
+      <!-- <img src="imgdir/Mee.jpg" class="gallery__img" alt="Image 3"> -->
+    </figure>
+
+    <figure class="gallery__item gallery__item--4">
+      <img src="imgdir/frisbeeee.jpg" class="gallery__img" alt="Image 4">
+    </figure>
+
+    <figure class="gallery__item gallery__item--5">
+      <img src="imgdir/MyDesktopComputer2.jpg" class="gallery__img" alt="Image 5">
+    </figure>
+
+    <figure class="gallery__item gallery__item--6">
+      <!--<img src="imgdir/oasis.jpg" class="gallery__img" alt="Image 6">-->
+    </figure>
+
+    <figure class="gallery__item gallery__item--7">
+      <img src="imgdir/astronaut2.png" class="gallery__img" alt="Image 7">
+    </figure>
+
+    <figure class="gallery__item gallery__item--8">
+      <img src="imgdir/programming.png" class="gallery__img" alt="Image 8">
+    </figure>
+
+    <figure class="gallery__item gallery__item--9">
+      <img src="imgdir/HikingTrip.png" class="gallery__img" alt="Image 9">
+    </figure>
+
+    <figure class="gallery__item gallery__item--10">
+      <img src="imgdir/dice.jpg" class="gallery__img" alt="Image 10">
+    </figure>
+
   </div>
+
+  <div class="footer">
+
+    <table class="footer_table" border="0">
+      <tr>
+        <td><p>Contact Me</p></td>
+        <td><p>Learn More</p></td>
+      </tr>
+
+      <!-- <tr>
+        <td colspan="2"><hr style="border:1px solid white"></td>
+      </tr> -->
+      <tr>
+        <td style=""><p>rpauly110@gmail.com</p></td>
+        <td>
+          <button onclick="goToLinkedIn()" class="icon_btn" unselectable="on">
+            <i class="fa fa-linkedin-square"></i>
+          </button>
+          <button onclick="goToGitHub()" class="icon_btn" unselectable="on">
+            <i class="fa fa-github"></i>
+          </button>
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- <br>
+    <p>Contact Me</p>
+
+    <button onclick="goToLinkedIn()" class="icon_btn" unselectable="on">
+      <i class="fa fa-linkedin-square"></i>
+    </button>
+
+    <button onclick="goToGitHub()" class="icon_btn" unselectable="on">
+      <i class="fa fa-github"></i>
+    </button> -->
+
+    <!-- <button onclick="" class="dropDownBtn">
+      <i id="linkedInIcon" class="fa fa-linkedin-square" href="https://www.linkedin.com/in/ryan-pauly-7001281aa/"></i>
+    </button>
+
+    <button onclick="" class="dropDownBtn">
+      <i id="gitHubIcon" class="fa fa-github" href="https://github.com/TheCartographerR"></i>
+    </button> -->
+
+  </div>
+
 
 </body>
-
--->
-
-
 <script>
 
   /* When the user clicks on the button,
@@ -153,6 +172,14 @@
         }
       }
     }
+  }
+
+  function goToLinkedIn(){
+    window.open('https://www.linkedin.com/in/ryan-pauly-7001281aa/');
+  }
+
+  function goToGitHub(){
+    window.open('https://github.com/TheCartographerR');
   }
 
 

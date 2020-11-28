@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FREE GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+  <ul class="topnav">
+    <li><a class="active" href="about.html">About Me</a></li>
+    <li><a href="resume.html">Resume</a></li>
+
+    <li class="dropdown">
+
+        <button onclick="myFunction()" class="dropDownBtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-projects">
+          <a href="DataCenterRFP-Response.html">ORNL Data-Center Design Proposal</a>
+          <a href="FIFO-project.html">FPGA FIFO with VHDL</a>
+		  <a href="ML-MultivariateLinearRegression.html">ML: Multivariate Linear Regression</a>
+          <a href="ML-BreastCancerDiagnosis.html">ML: Breast Cancer Diagnosis</a>
+          <a href="ML-Reduction&KmeansClustering.html">ML: Reduction & K-Means Clustering</a>
+        </div>
+    </li>
+    <li><a  href="index.html">Home</a></li>
+    <li class="left"><a href="index.html">Ryan Pauly</a></li>
+  </ul>
+
+  </br></br></br></br></br>
+
+  <div class="grid-container">
+
+    <!-- Profile Icon -->
+    <div class="one">
+      <img src="imgdir/Mee.jpg" id="profile" alt="Image 1"/>
+    </div>
+
+    <!-- ABOUT SECTION TEXT -->
+    <div class="AboutSECTION">
+      <h1>About Me</h1>
+      </br>
+      <p>I graduated May 2020 with a Bachelor of Science degree in Computer Engineering from the University of Tennessee, Knoxville.</p>
+      </br>
+      </br>
+
+      <h2>Hobbies</h2>
+
+      <p>Desktop Computers are a big hobby of mine. I love to keep up with all the new hardware that is coming out from Intel, Nvidia, and AMD.</p>
+
+      <p>Backpacking and camping are another fun hobby of mine.</p>
+
+    </div>
+
+
+    <!-- GALLERY START -->
+    <div class="three">
+      <hr>
+      <div class="ContactInformation">
+        <p>GALLERY</P>
+      </div>
+    </div>
+
+    <!-- LOG CABIN IMAGE -->
+    <div class="four">
+      <img src="imgdir/LogCabin.jpg" class="gallery_img" alt="log cabin">
+    </div>
+
+    <!-- DESKTOP -->
+    <div class="five">
+      <img src="imgdir/MyDesktopComputer2.jpg" class="gallery_img" alt="My Desktop">
+    </div>
+
+    <!-- TWIN ARCHES -->
+    <div class="six">
+      <img src="imgdir/twin_arches.jpg" class="gallery_img" alt="Twin Arches Loop Trail">
+    </div>
+
+    <div class="seven">
+      <img src="imgdir/HikingTrip.png" class="gallery_img" alt="Hiking Trip">
+    </div>
+
+    <div class="eight">
+      <img src="imgdir/FixingUpAnOldDesktop.jpg" class="gallery_img" alt="Fixing an old desktop!">
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="ten">
+      <hr>
+      <div class="ContactInformation">
+        <p>CONTACT ME</P>
+
+        <p>Contact Information is available on my resume.</p>
+      </div>
+    </div>
+    <!--
+    <div class="elven">Eleven</div>
+    <div class="twelve">Twelve</div>
+    -->
+  </div>
+
+
+
+
+<!-- CONTACT INFO -->
+<!--
+  <hr>
+  <div class="ContactInformation">
+    <p>CONTACT ME</P>
+
+    <p>Contact Information is available on my resume.</p>
+  </div>
+
+</body>
+
+-->
+
+
+<script>
+
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropDownBtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-projects");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+</script>
+
+</html>
