@@ -214,6 +214,10 @@ li.dropdown a:hover {
 
 */
 
+h1, h2{
+  text-align: center;
+}
+
 .embedded-project{
   display: block;
   text-align: center;
